@@ -7,6 +7,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('../modules/page1/page1.module').then((m) => m.Page1Module),
   },
+  {
+    path: 'page2',
+    loadChildren: () =>
+      import('../modules/page2/page2.module').then((m) => m.Page2Module),
+  },
 ];
 
 @NgModule({
